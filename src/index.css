@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #0E1224;
+    --accent-mint: #6EE7B7;
+    --accent-lavender: #A78BFA;
+    --background: #FAF9F6;
+    --surface: #FFFFFF;
+    --text-primary: #0E1224;
+    --text-secondary: #6B7280;
+    --text-muted: #9CA3AF;
+    --border: #D9DCE3;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+    @apply font-sans;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom Cursor */
+@media (pointer: fine) {
+  .custom-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(110, 231, 183, 0.5);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, background-color 0.2s;
+  }
+  
+  .custom-cursor.hovering {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(110, 231, 183, 0.2);
+    border: 1px solid rgba(110, 231, 183, 0.8);
+  }
+}
