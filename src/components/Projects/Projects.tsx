@@ -1,6 +1,5 @@
 import { portfolioData } from '../../data/portfolio';
 import { SectionHeading } from '../ui/SectionHeading';
-import { motion } from 'framer-motion';
 import smartHomeImg from '../../assets/smart_home.png';
 import bankImg from '../../assets/bank.png';
 
