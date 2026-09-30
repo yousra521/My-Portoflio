@@ -27,7 +27,7 @@ export default function Skills() {
         <SectionHeading num="03" label="Skills" title="Skills & Tools" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {(Object.keys(portfolioData.skills) as Array<keyof typeof portfolioData.skills>).map((category, index) => (
+          {(Object.keys(portfolioData.skills) as Array<keyof typeof portfolioData.skills>).map((category) => (
             <div 
               key={category}
               className="bg-[#FAF9F6] border border-[#D9DCE3] rounded-[24px] p-8 hover:border-[#6EE7B7]/50 hover:shadow-[0_10px_30px_rgba(14,18,36,0.03)] transition-all duration-300"
